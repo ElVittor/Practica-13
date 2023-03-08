@@ -14,15 +14,15 @@ class login:
         self.__section1=Frame(self.__Ventana)
         self.__section1.pack(expand=True,fill="both")
         
-        self.__titulo=Label(self.__section1,text="Login",bg="black",fg="white",font=("Arial",12)).pack()
+        self.__titulo=Label(self.__section1,text="Generador automatico",bg="Grey",fg="Red",font=("Arial",12)).pack()
         
         self.__var1=tk.StringVar()
         self.__lblUsuario=Label(self.__section1,text="Usuario").pack()
         self.__txtUsusario=Entry(self.__section1,textvariable=self.__var1,takefocus=True).pack()
         
         self.__var2=tk.StringVar()
-        self.__lblUsuario=Label(self.__section1,text="Contraseña").pack()
-        self.__txtUsusario=Entry(self.__section1,show="**",textvariable=self.__var2).pack()
+        self.__lblContraseña=Label(self.__section1,text="Contraseña").pack()
+        self.__txtConstraseña=Entry(self.__section1,show="**",textvariable=self.__var2).pack()
         
         self.__btnAceso=Button(self.__section1,text="Acceder",bg="green",command=ejecutaVal)
         self.__btnAceso.pack()
