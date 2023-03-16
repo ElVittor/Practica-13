@@ -35,7 +35,7 @@ seguridadetiq.pack()
 fortaleza = tk.Label(ventana, textvariable=seguridad)
 fortaleza.pack()
 
-generador = generador(longitud1, mayus, especiales, numeros,Contraseña, seguridad)
+generador = generador(longitud, mayus, especiales, numeros,Contraseña, seguridad)
 generar = tk.Button(ventana, text="Generar contraseña", command=generador.generar)
 generar.pack()
 ventana.mainloop()
